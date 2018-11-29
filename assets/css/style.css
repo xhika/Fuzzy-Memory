@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.card img {
+	height: 100px;
+	width: 100px;
+}
+.front-card,
+.back-card {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: #7886d7;
+	backface-visibility: hidden;
+}
+
