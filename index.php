@@ -13,67 +13,67 @@
 	</div>
 
 	<div class="max-w-lg flex flex-wrap">
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="surprised_open_mouth">
 			<img class="front-card rounded" src="assets/img/surprised_open_mouth.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="me_gusta">
 			<img class="front-card rounded" src="assets/img/me_gusta.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="no">
 			<img class="front-card rounded" src="assets/img/no.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="oh_stop">
 			<img class="front-card rounded" src="assets/img/oh_stop.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="pokerface">
 			<img class="front-card rounded" src="assets/img/pokerface.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="spiderpman">
 			<img class="front-card rounded" src="assets/img/spiderpman.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="surprised_open_mouth">
 			<img class="front-card rounded" src="assets/img/surprised_open_mouth.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="troll_face">
 			<img class="front-card rounded" src="assets/img/troll_face.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="y_u_no">
 			<img class="front-card rounded" src="assets/img/y_u_no.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="me_gusta">
 			<img class="front-card rounded" src="assets/img/me_gusta.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="no">
 			<img class="front-card rounded" src="assets/img/no.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="oh_stop">
 			<img class="front-card rounded" src="assets/img/oh_stop.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="pokerface">
 			<img class="front-card rounded" src="assets/img/pokerface.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="spiderpman">
 			<img class="front-card rounded" src="assets/img/spiderpman.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="troll_face">
 			<img class="front-card rounded" src="assets/img/troll_face.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
-		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo">
+		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="y_u_no">
 			<img class="front-card rounded" src="assets/img/y_u_no.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
 		</div>
