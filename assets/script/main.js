@@ -52,3 +52,14 @@ shuffle.addEventListener('click', function() {
 		card.style.order = randImg;
 	});
 });
+
+
+function startGame() {
+	cards.forEach(card => {
+		let randImg = Math.floor(Math.random() * 16);
+		card.style.order = randImg;
+	});
+};
+
+// shuffle cards on load
+window.onload = startGame();
