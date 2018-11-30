@@ -3,6 +3,9 @@
 	margin: 0 auto;
 	padding: 0;
 }
+h1 {
+	font-family: 'Leckerli One', cursive;
+}
 img {
 	height: 100px;
 	width: 100px;
@@ -11,6 +14,12 @@ img {
 	transform-style: scale(1);
 	transform-style: preserve-3d;
 	transition: transform .5s;
+	cursor: pointer;
+	width: 22%;
+	height: 10rem;
+}
+.card:hover {
+	transform: skew(2deg, 2deg);
 }
 .card:active {
 	transform:scale(.95);
@@ -29,5 +38,8 @@ img {
 	position: absolute;
 	background: #7886d7;
 	backface-visibility: hidden;
+}
+.shuffle {
+	margin-left: -30px;
 }
 
