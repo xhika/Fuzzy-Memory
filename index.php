@@ -7,12 +7,12 @@
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 	<title>derp</title>
 </head>
-<body>
+<body class="bg-grey-light">
 	<div class="w-full bg-indigo h-12 mx-auto text-center">
 		<h1 class="text-white">Derp</h1>
 	</div>
 
-	<div class="max-w-lg flex flex-wrap">
+	<div class="max-w-lg flex flex-wrap my-8">
 		<div class="card w-1/4 h-48 rounded-lg border-2 border-indigo" data-img="surprised_open_mouth">
 			<img class="front-card rounded" src="assets/img/surprised_open_mouth.jpg">
 			<img class="back-card rounded" src="assets/img/freddie_mercury.jpg">
@@ -79,7 +79,6 @@
 		</div>
 	</div>
 	<div class="mx-auto text-center">
-		<div class="lds-ripple"><div></div><div></div></div>
 		<button class="bg-indigo py-4 px-6 text-white rounded uppercase font-bold tracking-wide shadow-lg my-8">Shuffle 
 		</button>
 	</div>

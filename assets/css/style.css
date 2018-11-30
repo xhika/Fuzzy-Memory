@@ -10,13 +10,13 @@ img {
 .card {
 	transform-style: scale(1);
 	transform-style: preserve-3d;
-	transition: tranform .5s;
+	transition: transform .5s;
 }
 .card:active {
 	transform:scale(.95);
 	transition: transform .2s;
 }
-.flip {
+.card.flip {
 	transform: rotateY(180deg);
 }
 .front-card {
