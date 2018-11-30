@@ -18,13 +18,29 @@ function flipCard() {
 		checkForMatch();
 	}
 }
+
 function checkForMatch() {
 	if(firstCard.dataset.img !== secondCard.dataset.img) {
-		console.log('no match');
+		resetCards();
 	} else {
-		console.log('its a match');
+		disableCards();
 	}
 }
+
+
+function resetCards() {
+  // adding timout for cards to unflip
+  setTimeout(() => {
+  	firstCard.classList.remove('flip');
+  	secondCard.classList.remove('flip');
+  }, 1000);  
+}
+
+function disableCards() {
+	firstCard.removeEventListener('click', flipCard);
+	secondCard.removeEventListener('click', flipCard);
+}
+
 // adds click event for every card using callback flipCard
 cards.forEach(card => card.addEventListener('click', flipCard));
 

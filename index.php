@@ -9,7 +9,7 @@
 </head>
 <body class="bg-grey-light">
 	<div class="w-full bg-indigo h-12 mx-auto text-center">
-		<h1 class="text-white">Derp</h1>
+		<h1 class="text-white pt-1">Memory Game</h1>
 	</div>
 
 	<div class="max-w-lg flex flex-wrap my-8">
