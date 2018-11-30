@@ -79,7 +79,7 @@
 		</div>
 	</div>
 	<div class="mx-auto text-center">
-		<button class="bg-indigo py-4 px-6 text-white rounded uppercase font-bold tracking-wide shadow-lg my-8">Shuffle 
+		<button class="shuffle bg-indigo py-4 px-6 text-white rounded uppercase font-bold tracking-wide shadow-lg my-8">Shuffle 
 		</button>
 	</div>
 

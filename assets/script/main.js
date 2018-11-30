@@ -1,6 +1,7 @@
 'use strict'
 
-const cards = document.querySelectorAll('.card')
+const cards = document.querySelectorAll('.card');
+const shuffle = document.querySelector('.shuffle');
 
 let flippedCard = false;
 let firstCard, secondCard;
@@ -44,3 +45,10 @@ function disableCards() {
 // adds click event for every card using callback flipCard
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+// shuffle cards on click
+shuffle.addEventListener('click', function() {
+	cards.forEach(card => {
+		let randImg = Math.floor(Math.random() * 16);
+		card.style.order = randImg;
+	});
+});
