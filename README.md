@@ -1,5 +1,5 @@
 # fuzzy-memory
-![screenshot](https://demo.gif)
+![screenshot](demo.gif)
 
 
 
