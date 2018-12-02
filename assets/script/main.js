@@ -2,6 +2,8 @@
 
 const cards = document.querySelectorAll('.card');
 const shuffle = document.querySelector('.shuffle');
+const reset = document.querySelector('.reset');
+
 
 let flippedCard = false;
 let firstCard, secondCard;
@@ -60,6 +62,11 @@ function startGame() {
 		card.style.order = randImg;
 	});
 };
+
+// refreshes the page for lazy "reset" effect
+reset.addEventListener('click', () => {
+	window.location.reload(true);
+});
 
 // shuffle cards on load
 window.onload = startGame();

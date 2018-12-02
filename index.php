@@ -82,6 +82,8 @@
 	<div class="mx-auto text-center">
 		<button class="shuffle bg-indigo hover:bg-indigo-dark py-4 px-6 text-white rounded uppercase font-bold tracking-wide shadow-lg my-2">Shuffle 
 		</button>
+		<button class="reset bg-indigo hover:bg-indigo-dark py-4 px-6 text-white rounded uppercase font-bold tracking-wide shadow-lg my-2">Reset
+		</button>
 	</div>
 
 
