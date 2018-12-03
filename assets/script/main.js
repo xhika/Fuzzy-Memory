@@ -4,69 +4,103 @@ const cards = document.querySelectorAll('.card');
 const shuffle = document.querySelector('.shuffle');
 const reset = document.querySelector('.reset');
 
+let flippedCards = [];
+let lockedCards = [];
 
-let flippedCard = false;
-let firstCard, secondCard;
+// check if the two targets are the same
+function checkForMatch(firstCard, secondCard) {
+    // if data attributes match, disable both cards
+    if (firstCard.dataset.img === secondCard.dataset.img) {
+        disableOnMatch([firstCard, secondCard]);
 
-// toggles flip class to every card
-function flipCard() {
-	this.classList.toggle('flip');
-
-	if(!flippedCard) {
-		flippedCard = true;
-		firstCard = this;
-	} else {
-		flippedCard = false;
-		secondCard = this;
-		checkForMatch();
-	}
+        // resets array
+        flippedCards = [];
+    } else {
+        setTimeout(() => {
+            resetCards(flippedCards);
+            // resets array if there's no match
+            flippedCards = [];
+        }, 1000);
+    }
 }
 
-function checkForMatch() {
-	if(firstCard.dataset.img !== secondCard.dataset.img) {
-		resetCards();
-	} else {
-		disableCards();
-	}
+// when 2 cards match disable target
+function disableOnMatch(target) {
+    setTimeout(() => {
+        target.forEach(card => {
+            card.classList.add('disable');
+        });
+    }, 500);
 }
 
+// loops through cards & makes each card clickable
+cards.forEach(card => card.addEventListener('click', () => {
 
-function resetCards() {
-  // adding timout for cards to unflip
-  setTimeout(() => {
-  	firstCard.classList.remove('flip');
-  	secondCard.classList.remove('flip');
-  }, 1000);  
+    // if there are 2 or more flipped cards OR if clicked card is locked then do nothing
+    if (flippedCards.length >= 2 || lockedCards.indexOf(card) !== -1) {
+        return;
+    }
+
+    card.classList.add('flip');
+
+    flippedCards.push(card);
+    lockedCards.push(card);
+
+    // if there are less than 2 cards, do nothing
+    if (flippedCards.length < 2) {
+        return;
+    }
+
+    // if there are 2 cards, check for match
+    checkForMatch(flippedCards[0], flippedCards[1]);
+}));
+
+// reset cards through array 'target'
+function resetCards(target) {
+    // loops through each targeted card
+    target.forEach(card => {
+        card.classList.remove('disable');
+        card.classList.remove('flip');
+
+        // check if card is currently locked
+        let index = lockedCards.indexOf(card)
+        if (index !== -1) {
+            // if it is locked, unlock it
+            delete lockedCards[index];
+        }
+    });
+}
+// adds some effect
+function skewMe() {
+    cards.forEach(card => {
+        card.classList.add('skew');
+
+        setTimeout(() => {
+            card.classList.remove('skew');
+        }, 500);
+    });
 }
 
-function disableCards() {
-	firstCard.removeEventListener('click', flipCard);
-	secondCard.removeEventListener('click', flipCard);
-}
+shuffle.addEventListener('click', shuffleCards);
 
-// adds click event for every card using callback flipCard
-cards.forEach(card => card.addEventListener('click', flipCard));
+// resets game on click
+reset.addEventListener('click', () => {
+    // resets all available cards
+    resetCards(cards);
+    skewMe();
 
-// shuffle cards on click
-shuffle.addEventListener('click', function() {
-	cards.forEach(card => {
-		let randImg = Math.floor(Math.random() * 16);
-		card.style.order = randImg;
-	});
+    setTimeout(() => {
+        shuffleCards();
+    }, 500);
 });
 
-
-function startGame() {
-	cards.forEach(card => {
-		let randImg = Math.floor(Math.random() * 16);
-		card.style.order = randImg;
-	});
+// shuffles cards with random function
+function shuffleCards() {
+    cards.forEach(card => {
+        let randImg = Math.floor(Math.random() * 16);
+        card.style.order = randImg;
+    });
 };
 
-// refreshes the page for lazy "reset" effect
-reset.addEventListener('click', () => {
-	window.location.reload(true);
-});
-
 // shuffle cards on load
-window.onload = startGame();
+window.onload = shuffleCards();
