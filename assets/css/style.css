@@ -16,7 +16,6 @@ img {
 	cursor: pointer;
 	width: 22%;
 	height: 10rem;
-    user-select: none;
 }
 .card.skew,
 .card:hover {
