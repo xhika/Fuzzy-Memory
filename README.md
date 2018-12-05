@@ -16,7 +16,9 @@ Use the terminal to clone project.
 git clone https://github.com/xhika/Fuzzy-Memory.git
 ```
 
-
+## Testers from Class
+[Mikael](https://github.com/MRavantti)
+[Amin](https://github.com/Amin-Mohamed)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
